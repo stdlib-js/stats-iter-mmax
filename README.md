@@ -43,30 +43,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-iter-mmax
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var itermmax = require( '@stdlib/stats-iter-mmax' );
+import itermmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmax@deno/mod.js';
 ```
 
 #### itermmax( iterator, W )
@@ -74,7 +58,7 @@ var itermmax = require( '@stdlib/stats-iter-mmax' );
 Returns an [iterator][mdn-iterator-protocol] which iteratively computes a moving maximum value. The `W` parameter defines the number of iterated values over which to compute the moving maximum.
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
 
 var arr = array2iterator( [ 2.0, 1.0, 3.0, -7.0, -5.0 ] );
 var it = itermmax( arr, 3 );
@@ -123,8 +107,8 @@ m = it.next().value; // [3.0, -7.0, -5.0]
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var runif = require( '@stdlib/random-iter-uniform' );
-var itermmax = require( '@stdlib/stats-iter-mmax' );
+import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
+import itermmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmax@deno/mod.js';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -186,7 +170,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -250,13 +234,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/max]: https://github.com/stdlib-js/stats-iter-max
+[@stdlib/stats/iter/max]: https://github.com/stdlib-js/stats-iter-max/tree/deno
 
-[@stdlib/stats/iter/mmidrange]: https://github.com/stdlib-js/stats-iter-mmidrange
+[@stdlib/stats/iter/mmidrange]: https://github.com/stdlib-js/stats-iter-mmidrange/tree/deno
 
-[@stdlib/stats/iter/mmin]: https://github.com/stdlib-js/stats-iter-mmin
+[@stdlib/stats/iter/mmin]: https://github.com/stdlib-js/stats-iter-mmin/tree/deno
 
-[@stdlib/stats/iter/mrange]: https://github.com/stdlib-js/stats-iter-mrange
+[@stdlib/stats/iter/mrange]: https://github.com/stdlib-js/stats-iter-mrange/tree/deno
 
 <!-- </related-links> -->
 
